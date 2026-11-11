@@ -78,7 +78,7 @@
   width: 100%;
   max-width: 75rem;
   margin: 0 auto;
-  border: 3px solid black;
+
   font-family: "Heebo", "Heebo Fallback";
 }
 
@@ -113,16 +113,14 @@
   font-weight: inherit;
 }
 .hero_paragraph {
-      font-size: clamp(1.125rem, 1.067rem + .2902vi, 1.3281rem);
-      color: rgb(115 115 115);
+  font-size: clamp(1.125rem, 1.067rem + 0.2902vi, 1.3281rem);
+  color: rgb(115 115 115);
 }
 .hero_rightside {
   inline-size: 40%;
 }
 .hero_rightside img {
-
- max-inline-size: 100%;
-   
+  max-inline-size: 100%;
 }
 
 .hero_dual_button {
@@ -155,19 +153,138 @@
   border-radius: 9999px;
   color: black;
 }
-/* .homepage_container{
-    padding-inline:  clamp(2rem, 1.8447rem + .7767vi, 2.5rem);
-    padding-block: clamp(1.5rem, 1.3835rem + .5825vi, 1.875rem);
-    font-family:"Heebo", "Heebo Fallback" ;
-    border: 2px solid black;
-} */
-/* .container_sm{
-     width: 100%;
-   max-width: 75rem;
-    margin: 0 auto;
-     border: 2px solid black;
-} */
+/*------------------LEARNING --------------------- */
+.learning_section_parent {
+  padding-inline: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+}
+.learning_section_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: left;
+  padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  padding-block: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  border-radius: 1rem;
+  background-color: #3e54a3;
+  gap: clamp(1rem, 0.9223rem + 0.3883vi, 1.25rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.learning_section_left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: clamp(0.5rem, 0.4612rem + 0.1942vi, 0.625rem);
+}
+.learning_section_heading {
+  font-family: "Heebo", "Heebo Fallback";
 
+  font-weight: 600;
+  font-size: clamp(1.125rem, 1.067rem + 0.2902vi, 1.3281rem);
+}
+.learning_section_paragraph {
+  font-family: "Heebo", "Heebo Fallback";
+  font-size: clamp(0.8854rem, 0.867rem + 0.0923vw, 0.95rem);
+  color: rgb(227 233 251);
+}
+.learning_section_right {
+  color: rgb(62 84 163);
+  font-family: "Barlow", "Barlow Fallback";
+  letter-spacing: 0.05em;
+  font-size: clamp(0.8854rem, 0.867rem + 0.0923vw, 0.95rem);
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-inline: clamp(1rem, 0.9223rem + 0.3883vi, 1.25rem);
+  padding-block: clamp(0.5rem, 0.4612rem + 0.1942vi, 0.625rem);
+  background-color: rgb(255 255 255 / 1);
+  border: 1px solid rgb(255 255 255 / 1);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/*------------------REVIEW SECTION--------------------- */
+.review_section {
+  padding-block: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+}
+.review_section_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  display: flex;
+  align-items: center;
+  
+}
+.review_card_one {
+  box-shadow:
+    0 1px 3px 0 #0000001a,
+    0 1px 2px -1px #0000001a;
+  padding: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  background-color: rgb(255 255 255 / 1);
+  border: 1px solid;
+  border-color: rgb(229 229 229);
+  border-radius: 1rem;
+  display: flex;
+    flex-direction: column;
+  
+  flex-basis: 0;
+  gap: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  flex-grow: 1;
+  font-family: "Heebo", "Heebo Fallback";
+}
+.review_card_two {
+  box-shadow:
+    0 1px 3px 0 #0000001a,
+    0 1px 2px -1px #0000001a;
+  padding: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  background-color: rgb(255 255 255 / 1);
+  border: 1px solid;
+  border-color: rgb(229 229 229);
+  border-radius: 1rem;
+  display: flex;
+    flex-direction: column;
+  flex-basis: 0;
+  gap: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  flex-grow: 1;
+  font-family: "Heebo", "Heebo Fallback";
+}
+.review_card_one_paragraph {
+  font-size: clamp(1.125rem, 1.067rem + 0.2902vi, 1.3281rem);
+}
+.review_card_two_paragraph {
+  font-size: clamp(1.125rem, 1.067rem + 0.2902vi, 1.3281rem);
+}
+.review_card_lower_part {
+  display: flex;
+
+  align-items: center;
+  gap: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+}
+.review_card_img {
+  border-radius: 9999px;
+width: 3.125rem;
+
+}
+
+.review_card_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+}
+.review_card_title_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: clamp(.25rem, .2306rem + .0971vi, .3125rem);
+}
+
+/*------------------------------------------- media queary------------------------ */
 /* media queary for nav bar */
 
 @media screen and (max-width: 768px) {
@@ -176,7 +293,6 @@
   }
   .mobile_logo {
     display: inline-block;
-    
   }
   .menu {
     display: none;
@@ -190,38 +306,88 @@
 
 @media screen and (max-width: 768px) {
   .hero_dual_button {
-  display: flex;
-  flex-direction: column;
-}
-.hero_rightside img {
-  max-inline-size: 100%;
- 
-   
- 
-}
+    display: flex;
+    flex-direction: column;
+  }
+  .hero_rightside img {
+    max-inline-size: 100%;
+  }
 }
 
-@media screen and (max-width: 425px){
-.hero_container {
+@media screen and (max-width: 425px) {
+  .hero_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero_rightside img {
+    max-inline-size: 100%;
+    inline-size: 100%;
+  }
+  .hero_rightside {
+    inline-size: 100%;
+  }
+  .hero_leftside {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+    align-items: flex-start;
+    justify-content: center;
+    inline-size: 100%;
+  }
+}
+/* media queary for learning section  */
+
+@media screen and (max-width: 768px) {
+  .learning_section_container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: left;
+    padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+    padding-block: clamp(1rem, 0.9223rem + 0.3883vi, 1.25rem);
+    border-radius: 1rem;
+    background-color: #3e54a3;
+    gap: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 425px) {
+  .learning_section_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .learning_section_right {
+    width: 100%;
+  }
+}
+
+/* media queary for review section  */
+@media screen and (max-width: 1024px){
+  .review_section_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-.hero_rightside img{
-  max-inline-size: 100%;
-  inline-size: 100%;
+}
  
-}
-.hero_rightside {
-  inline-size:100%;
-}
-.hero_leftside {
+@media screen and (max-width: 768px) {
+  .review_section_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
   display: flex;
   flex-direction: column;
-  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
-  align-items: flex-start;
-  justify-content: center;
-  inline-size:100%;
+  align-items: center;
 }
 }
