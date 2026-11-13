@@ -220,7 +220,6 @@
   gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
   display: flex;
   align-items: center;
-  
 }
 .review_card_one {
   box-shadow:
@@ -232,8 +231,8 @@
   border-color: rgb(229 229 229);
   border-radius: 1rem;
   display: flex;
-    flex-direction: column;
-  
+  flex-direction: column;
+
   flex-basis: 0;
   gap: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
   flex-grow: 1;
@@ -249,7 +248,7 @@
   border-color: rgb(229 229 229);
   border-radius: 1rem;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   flex-basis: 0;
   gap: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
   flex-grow: 1;
@@ -269,21 +268,259 @@
 }
 .review_card_img {
   border-radius: 9999px;
-width: 3.125rem;
-
+  width: 3.125rem;
 }
 
-.review_card_img img{
+.review_card_img img {
   width: 100%;
   height: 100%;
   border-radius: 9999px;
 }
-.review_card_title_wrapper{
+.review_card_title_wrapper {
   display: flex;
   flex-direction: column;
-  gap: clamp(.25rem, .2306rem + .0971vi, .3125rem);
+  gap: clamp(0.25rem, 0.2306rem + 0.0971vi, 0.3125rem);
 }
 
+/*------------------practice SECTION--------------------- */
+.practice_section {
+  padding-block: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+}
+.practice_heading_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+}
+.practice_heading_container h2 {
+  font-size: clamp(1.728rem, 1.6609rem + 0.3355vi, 1.944rem);
+  font-family: "Barlow", "Barlow Fallback";
+  line-height: 1.1;
+  font-weight: 600;
+}
+.practice_heading_container p {
+  color: #737373;
+  max-width: 65ch;
+  font-family: "Heebo", "Heebo Fallback";
+}
+.practice_card_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  display: flex;
+  align-items: center;
+}
+.practice_card {
+  box-shadow:
+    0 1px 3px 0 #0000001a,
+    0 1px 2px -1px #0000001a;
+  padding: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  background-color: rgb(255 255 255 / 1);
+  border: 1px solid;
+  border-color: rgb(229 229 229);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 0;
+  gap: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  flex-grow: 1;
+  font-family: "Heebo", "Heebo Fallback";
+}
+
+.practice_card_paragraph {
+  font-size: clamp(1.125rem, 1.067rem + 0.2902vi, 1.3281rem);
+}
+.practice_card_lower_part {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.practice_card_icon {
+  width: 4.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(227 233 251);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #3e54a3;
+  font-size: clamp(1.728rem, 1.6609rem + 0.3355vi, 1.944rem);
+  border: 0 solid #e5e7eb;
+}
+.practice_card_icon i {
+  rotate: 90deg;
+}
+.practice_card_icon_two {
+  width: 4.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(227 233 251);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #3e54a3;
+  font-size: clamp(1.728rem, 1.6609rem + 0.3355vi, 1.944rem);
+  border: 0 solid #e5e7eb;
+}
+/* ----------------challenge section-------------- */
+.challeng_section {
+  padding-inline: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  padding-block: clamp(6rem, 5.534rem + 2.3301vi, 7.5rem);
+}
+.challeng_section_container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: clamp(3rem, 2.767rem + 1.165vi, 3.75rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.challeng_section_heading {
+  font-family: "Barlow", "Barlow Fallback";
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(1.728rem, 1.6609rem + 0.3355vi, 1.944rem);
+}
+.challeng_card_heading{
+  font-family:"Barlow", "Barlow Fallback";
+font-size: clamp(1.44rem, 1.3841rem + .2796vi, 1.62rem);
+color: #262626;
+font-weight: 500;
+}
+.challeng_card_wrapper {
+  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+}
+.challeng_card {
+    border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  position: relative;
+
+  width: 100%;
+}
+.challeng_tag_wrapper {
+  display: inline-flex;
+  position: absolute;
+  z-index: 10;
+  align-items: center;
+  border: 0 solid #e5e7eb;
+  gap: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+  top: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+  right: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+}
+.challeng_tag {
+  color: rgb(62 84 163 / 1);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(0.8854rem, 0.867rem + 0.0923vw, 0.95rem);
+  font-family: "Barlow", "Barlow Fallback";
+  text-align: center;
+  background-color: rgb(227 233 251);
+  border-radius: 9999px;
+  gap: clamp(0.25rem, 0.2306rem + 0.0971vi, 0.3125rem);
+  align-items: center;
+  width: max-content;
+  display: flex;
+  border: 0 solid #e5e7eb;
+  padding-block: clamp(0.25rem, 0.2306rem + 0.0971vi, 0.3125rem);
+  padding-inline: clamp(0.5rem, 0.4612rem + 0.1942vi, 0.625rem);
+}
+.challeng_card_upper a {
+  display: block;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  isolation: isolate;
+  position: relative;
+  cursor: pointer;
+  border: 0 solid #e5e7eb;
+  color: black;
+}
+.challeng_card_upper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.challeng_card_lower {
+  padding: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  gap: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+  display: flex;
+  flex-direction: column;
+  border: 0 solid #e5e7eb;
+  width: 100%;
+}
+.challeng_lower_tag_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+  border: 0 solid #e5e7eb;
+}
+.challeng_lower_tag_container ul {
+  gap: clamp(0.5rem, 0.4612rem + 0.1942vi, 0.625rem);
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tag_style {
+  color: rgb(2 132 199 / 1);
+  font-weight: 700;
+  font-family: "Barlow", "Barlow Fallback";
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  background-color: rgb(224 242 254);
+  border-radius: 0.25rem;
+}
+.tag_two{
+    color: rgb(217 119 6);
+}
+.tag_three{
+color: rgb(220 38 38);
+}
+.challeng_right_side_tag_container {
+  color: #34d399;
+  gap: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+.challeng_span_one {
+  background-color: currentColor;
+  border-radius: 0.125rem;
+  width: clamp(0.75rem, 0.6917rem + 0.2913vi, 0.9375rem);
+  aspect-ratio: 1;
+}
+.challeng_span_two {
+  color: #262626;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(0.8854rem, 0.867rem + 0.0923vw, 0.95rem);
+  font-family: "Barlow", "Barlow Fallback";
+}
+.challeng_lower_paragraph {
+  color: rgb(115 115 115 / 1);
+  overflow-wrap: break-word;
+      font-family: Heebo;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
 /*------------------------------------------- media queary------------------------ */
 /* media queary for nav bar */
 
@@ -366,28 +603,84 @@ width: 3.125rem;
 }
 
 /* media queary for review section  */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .review_section_container {
-  width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
-  padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
-  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+    gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .practice_heading_container {
+    width: 100%;
+    max-width: 75rem;
+    padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+    margin: 0 auto;
+    gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+  }
 }
-}
- 
+
 @media screen and (max-width: 768px) {
   .review_section_container {
-  width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
-  padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
-  gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+    gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+/* media queary for practice section  */
+@media screen and (max-width: 768px) {
+  .practice_card_container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .practice_card_container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-inline: clamp(2rem, 1.8447rem + 0.7767vi, 2.5rem);
+    gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* media queary for latest challenges section  */
+@media screen and (max-width: 768px) {
+  .challeng_card_wrapper{
+     gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .challeng_card_wrapper{
+     gap: clamp(1.5rem, 1.3835rem + 0.5825vi, 1.875rem);
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+  }
 }
