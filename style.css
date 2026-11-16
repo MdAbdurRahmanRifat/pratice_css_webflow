@@ -697,7 +697,7 @@
   max-width: 75rem;
   margin: 0 auto;
   gap: clamp(3rem, 2.767rem + 1.165vi, 3.75rem);
-  border: 1px solid red;
+  
 }
 .passive_learning_section_head_line {
   font-family: "Barlow", "Barlow Fallback";
